@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for JobFit — ATS Resume Score Checker & CV Builder Android application.">
+    <meta name="robots" content="index, follow">
+    <title>Terms of Service — JobFit | ATS Resume Score Checker & CV Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B2A4A;
+            --primary-light: #2A3F6B;
+            --accent: #D4A843;
+            --accent-light: #E8C96A;
+            --surface: #F8F7F4;
+            --surface-card: #FFFFFF;
+            --text-primary: #1A1A2E;
+            --text-secondary: #6B7280;
+            --divider: #E5E7EB;
+            --success: #2E7D4F;
+            --radius: 16px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--surface) 0%, #EDE9E0 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 60px 24px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(ellipse at 30% 50%, rgba(212,168,67,0.12) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .header-icon {
+            width: 72px; height: 72px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-icon svg { width: 36px; height: 36px; fill: var(--accent-light); }
+
+        .header h1 { font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -0.5px; margin-bottom: 8px; position: relative; }
+        .header .subtitle { font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.7); }
+
+        .container {
+            max-width: 720px;
+            margin: -24px auto 48px;
+            padding: 0 20px;
+            position: relative; z-index: 1;
+        }
+
+        .card {
+            background: var(--surface-card);
+            border-radius: var(--radius);
+            border: 1px solid var(--divider);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.04);
+            padding: 32px;
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 32px; height: 32px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--accent-light);
+            font-size: 14px; font-weight: 700;
+            border-radius: 10px; margin-right: 12px; flex-shrink: 0;
+        }
+
+        .section-header { display: flex; align-items: center; margin-bottom: 16px; }
+        .section-header h2 { font-size: 20px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.3px; }
+
+        .card p { font-size: 15px; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.75; }
+        .card p:last-child { margin-bottom: 0; }
+        .card ul { padding-left: 20px; margin-bottom: 14px; }
+        .card li { font-size: 15px; color: var(--text-secondary); margin-bottom: 6px; line-height: 1.65; }
+        .card strong { color: var(--text-primary); font-weight: 600; }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(46,125,79,0.08) 0%, rgba(46,125,79,0.04) 100%);
+            border-left: 4px solid var(--success);
+            border-radius: 0 12px 12px 0;
+            padding: 16px 20px; margin: 16px 0;
+        }
+        .highlight p { color: var(--success); font-weight: 500; margin-bottom: 0; }
+
+        .footer {
+            text-align: center;
+            padding: 32px 24px 48px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .footer .brand { font-weight: 700; color: var(--primary); }
+        .footer .divider {
+            width: 48px; height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            border-radius: 2px; margin: 0 auto 16px;
+        }
+
+        @media (max-width: 600px) {
+            .header { padding: 48px 20px 36px; }
+            .header h1 { font-size: 24px; }
+            .card { padding: 24px 20px; }
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+        </div>
+        <h1>Terms of Service</h1>
+        <p class="subtitle">JobFit — ATS Resume Score Checker & CV Builder</p>
+    </header>
+
+    <div class="container">
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">1</span>
+                <h2>Acceptance of Terms</h2>
+            </div>
+            <p><strong>Effective Date:</strong> July 15, 2026</p>
+            <p>
+                By downloading, installing, or using the JobFit application ("the App"), you agree
+                to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms,
+                please do not use the App.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">2</span>
+                <h2>Description of Service</h2>
+            </div>
+            <p>
+                JobFit is a mobile application that enables users to:
+            </p>
+            <ul>
+                <li>Create professional resumes using a guided step-by-step builder</li>
+                <li>Check ATS (Applicant Tracking System) compatibility scores by matching resume content against job descriptions</li>
+                <li>Export resumes as professionally formatted PDF documents</li>
+                <li>Access AI-powered phrasing optimization and skill-gap analysis tools</li>
+            </ul>
+            <p>
+                The App operates primarily offline. All resume data is stored locally on your device.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">3</span>
+                <h2>User Content &amp; Ownership</h2>
+            </div>
+            <p>
+                <strong>You retain full ownership</strong> of all content you create within the App,
+                including but not limited to resume text, personal information, work history, and
+                any other data you input.
+            </p>
+            <p>
+                We do not claim any intellectual property rights over your content. Since all data
+                is stored locally on your device, we have no access to your content at any time.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">4</span>
+                <h2>Advertisements</h2>
+            </div>
+            <p>
+                The App displays advertisements provided by Google AdMob. Certain premium features
+                may be temporarily unlocked by watching rewarded advertisements. The availability
+                and content of advertisements are managed by Google and are subject to
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">Google's Terms of Service</a>.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">5</span>
+                <h2>Disclaimer of Warranties</h2>
+            </div>
+            <p>
+                The App is provided <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong>
+                without warranties of any kind, either express or implied, including but not limited to:
+            </p>
+            <ul>
+                <li>Implied warranties of merchantability or fitness for a particular purpose</li>
+                <li>Accuracy, reliability, or completeness of the ATS matching algorithm</li>
+                <li>Guarantee of interview selection or employment outcomes</li>
+            </ul>
+            <div class="highlight">
+                <p>
+                    <strong>Important:</strong> The ATS compatibility score provided by JobFit is an
+                    estimated guideline based on keyword matching algorithms. It does not guarantee
+                    that your resume will pass through any specific ATS system or result in an interview.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">6</span>
+                <h2>Limitation of Liability</h2>
+            </div>
+            <p>
+                To the maximum extent permitted by applicable law, JobFit and its developers shall
+                not be liable for any indirect, incidental, special, consequential, or punitive
+                damages, including but not limited to:
+            </p>
+            <ul>
+                <li>Loss of data (since data is stored locally, you are responsible for device backups)</li>
+                <li>Loss of employment opportunities</li>
+                <li>Any damages resulting from reliance on ATS scores or resume suggestions</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">7</span>
+                <h2>Prohibited Uses</h2>
+            </div>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+                <li>Use the App to create misleading, fraudulent, or deceptive resume content</li>
+                <li>Circumvent or manipulate the advertising mechanisms within the App</li>
+                <li>Distribute modified copies of the App</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">8</span>
+                <h2>Changes to Terms</h2>
+            </div>
+            <p>
+                We reserve the right to modify these Terms at any time. Updated Terms will be
+                posted within the App and on this page with a revised effective date. Your
+                continued use of the App after changes are posted constitutes acceptance of
+                the updated Terms.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">9</span>
+                <h2>Governing Law</h2>
+            </div>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of
+                India, without regard to its conflict of law provisions.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="section-header">
+                <span class="section-number">10</span>
+                <h2>Contact Information</h2>
+            </div>
+            <p>
+                For any questions regarding these Terms, please contact us at:
+            </p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@jobfit.app" style="color: var(--primary); font-weight: 600;">support@jobfit.app</a></li>
+                <li><strong>Google Play Store:</strong> Use the developer contact section on our app listing.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="divider"></div>
+        <p>© 2026 <span class="brand">JobFit</span>. All rights reserved.</p>
+        <p style="margin-top: 4px; font-size: 13px;">ATS Resume Score Checker & CV Builder</p>
+    </footer>
+
+</body>
+</html>
